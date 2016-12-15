@@ -1,0 +1,6 @@
+framework module Pods_Article_Management_MVPUITests {
+  umbrella header "Pods-Article Management MVPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
