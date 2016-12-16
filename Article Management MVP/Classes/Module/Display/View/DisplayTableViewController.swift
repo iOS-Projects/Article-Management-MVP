@@ -16,14 +16,18 @@ class DisplayTableViewController: UITableViewController{
     
     var arr = [Article]()
     
+    override func viewWillAppear(_ animated: Bool) {
+        // Tell Presenter to Load Data
+        displayPresenter?.loadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         displayPresenter = DisplayPresenter()
         displayPresenter?.displayTableViewControllerInterface = self
         
-        // Tell Presenter to Load Data
-        displayPresenter?.loadData()
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

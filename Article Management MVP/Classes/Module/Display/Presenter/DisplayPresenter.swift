@@ -31,7 +31,6 @@ class DisplayPresenter{
         // tell service to delete
         displayModel?.deleteArticleFromAPI(id:id)
     }
-    
 }
 
 extension DisplayPresenter:DisplayPresenterInterface{

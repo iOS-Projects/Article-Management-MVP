@@ -22,6 +22,11 @@
 		F80776211E019AC100EF0250 /* DisplayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80776201E019AC100EF0250 /* DisplayTableViewController.swift */; };
 		F80776231E019B0400EF0250 /* DisplayTableViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80776221E019B0400EF0250 /* DisplayTableViewControllerInterface.swift */; };
 		F80776251E019B6D00EF0250 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80776241E019B6D00EF0250 /* Model.swift */; };
+		F87A10C71E035CD500D005BB /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A10C61E035CD500D005BB /* AddTableViewController.swift */; };
+		F87A10C91E035DC800D005BB /* AddTableViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A10C81E035DC800D005BB /* AddTableViewControllerInterface.swift */; };
+		F87A10CB1E035E0700D005BB /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A10CA1E035E0700D005BB /* AddPresenter.swift */; };
+		F87A10CD1E035E2B00D005BB /* AddPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A10CC1E035E2B00D005BB /* AddPresenterInterface.swift */; };
+		F87A10CF1E035E5900D005BB /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A10CE1E035E5900D005BB /* AddModel.swift */; };
 		F8FDE1251E02C2890015A240 /* Shorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE1241E02C2890015A240 /* Shorthand.swift */; };
 		F8FDE1291E02E9FD0015A240 /* DisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDE1281E02E9FD0015A240 /* DisplayTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +73,11 @@
 		F80776201E019AC100EF0250 /* DisplayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayTableViewController.swift; path = Classes/Module/Display/View/DisplayTableViewController.swift; sourceTree = "<group>"; };
 		F80776221E019B0400EF0250 /* DisplayTableViewControllerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayTableViewControllerInterface.swift; path = Classes/Module/Display/View/DisplayTableViewControllerInterface.swift; sourceTree = "<group>"; };
 		F80776241E019B6D00EF0250 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "Classes/Data Model/Model.swift"; sourceTree = "<group>"; };
+		F87A10C61E035CD500D005BB /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTableViewController.swift; path = Classes/Module/Add/View/AddTableViewController.swift; sourceTree = "<group>"; };
+		F87A10C81E035DC800D005BB /* AddTableViewControllerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTableViewControllerInterface.swift; path = Classes/Module/Add/View/AddTableViewControllerInterface.swift; sourceTree = "<group>"; };
+		F87A10CA1E035E0700D005BB /* AddPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPresenter.swift; path = Classes/Module/Add/Presenter/AddPresenter.swift; sourceTree = "<group>"; };
+		F87A10CC1E035E2B00D005BB /* AddPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPresenterInterface.swift; path = Classes/Module/Add/Presenter/AddPresenterInterface.swift; sourceTree = "<group>"; };
+		F87A10CE1E035E5900D005BB /* AddModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddModel.swift; path = Classes/Module/Add/Model/AddModel.swift; sourceTree = "<group>"; };
 		F8FDE1241E02C2890015A240 /* Shorthand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shorthand.swift; sourceTree = "<group>"; };
 		F8FDE1281E02E9FD0015A240 /* DisplayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayTableViewCell.swift; path = Classes/Module/Display/View/DisplayTableViewCell.swift; sourceTree = "<group>"; };
 		FBAAAD8C316359AAA09BA28E /* Pods_Article_Management_MVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Article_Management_MVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +220,6 @@
 			children = (
 				F8693E131E02F79D0076F0D4 /* Add */,
 				F80776121E0198E400EF0250 /* Display */,
-				F80776141E01990000EF0250 /* Add */,
 				F80776131E0198F600EF0250 /* Update */,
 			);
 			name = Module;
@@ -231,13 +240,6 @@
 			children = (
 			);
 			name = Update;
-			sourceTree = "<group>";
-		};
-		F80776141E01990000EF0250 /* Add */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Add;
 			sourceTree = "<group>";
 		};
 		F80776151E01991700EF0250 /* Model */ = {
@@ -280,6 +282,7 @@
 		F8693E141E02F7AC0076F0D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F87A10CE1E035E5900D005BB /* AddModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -287,6 +290,8 @@
 		F8693E161E02F7C80076F0D4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F87A10CA1E035E0700D005BB /* AddPresenter.swift */,
+				F87A10CC1E035E2B00D005BB /* AddPresenterInterface.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -294,6 +299,8 @@
 		F8693E171E02F7D60076F0D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F87A10C61E035CD500D005BB /* AddTableViewController.swift */,
+				F87A10C81E035DC800D005BB /* AddTableViewControllerInterface.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -583,11 +590,16 @@
 				F80776231E019B0400EF0250 /* DisplayTableViewControllerInterface.swift in Sources */,
 				F8FDE1291E02E9FD0015A240 /* DisplayTableViewCell.swift in Sources */,
 				F80776211E019AC100EF0250 /* DisplayTableViewController.swift in Sources */,
+				F87A10C91E035DC800D005BB /* AddTableViewControllerInterface.swift in Sources */,
+				F87A10CF1E035E5900D005BB /* AddModel.swift in Sources */,
 				F80775DE1E0197CA00EF0250 /* AppDelegate.swift in Sources */,
+				F87A10CB1E035E0700D005BB /* AddPresenter.swift in Sources */,
 				F807761D1E019A1900EF0250 /* DisplayModel.swift in Sources */,
 				F8FDE1251E02C2890015A240 /* Shorthand.swift in Sources */,
 				F807761F1E019A5A00EF0250 /* DisplayPresenterInterface.swift in Sources */,
 				F80776251E019B6D00EF0250 /* Model.swift in Sources */,
+				F87A10CD1E035E2B00D005BB /* AddPresenterInterface.swift in Sources */,
+				F87A10C71E035CD500D005BB /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

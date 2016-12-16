@@ -26,7 +26,6 @@ class DisplayModel{
         Alamofire.request(URL(string: GET_ALL_ARTICLE)!, method: HTTPMethod.get, parameters: params, encoding: URLEncoding.default, headers: HEADERS).responseArray(queue: nil, keyPath: "DATA", context: nil, completionHandler: { (response : DataResponse<[Article]>) in
             // Response to Presenter
             self.displayPresenterInterface?.responseData(response.result.value!)
-            
         })
     }
 
@@ -42,11 +41,7 @@ class DisplayModel{
                     // Tell presenter that the delete is success
                     self.displayPresenterInterface?.deleteSuccess()
                 }
-                
             }
-        
         })
     }
-    
-    
 }
